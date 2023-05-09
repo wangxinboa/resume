@@ -44,7 +44,7 @@
 
 &emsp;~~抄袭~~参考和打算~~抄袭~~参考的的开源框架如下: [WebGlobe](https://github.com/iSpring/WebGlobe)、[itowns](https://github.com/iTowns/itowns)、[cesium](https://github.com/CesiumGS/cesium)、[geo-three](https://github.com/tentone/geo-three)、[3DTilesRendererJS](https://github.com/NASA-AMMOS/3DTilesRendererJS)
 
-&emsp;在重新开发的时候，计划上是分为四个步骤的: 
+&emsp;在重新开发的时候，我个人的计划是分为四个步骤的: 
 
 1. 首先是要实现将地球作为一个单独的模型添加到 three 的场景中。需要做的是，根据每个瓦片的序列生产对应的模型，然后根据相机当前的视角计算得出需要展示的瓦片，然后添加控制器操作相机视角的变化，最后实现瓦片由于相机视角不断变化中而进行的更新。
 
