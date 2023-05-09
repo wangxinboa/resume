@@ -42,9 +42,7 @@
 
 &emsp;基于 three.js 实现的地理信息系统框架。之前的项目使用的都是小组内原本就有一个 gis 框架的，不过之前开发维护的人跑路了，然后小组内就没人懂了，之前的框架就只能用，不能改了(对于大厂的滤镜开始破碎)。然后我就和主管沟通了一下，重新开发了相关的框架。~~抄袭~~参考了小组内原本的 gis 框架，以及很多 github 上的开源框架，同时也学到了不少 gis 相关的知识，以及一些模型解析的规范等等。
 
-&emsp;~~抄袭~~参考的开源框架如下: [WebGlobe](https://github.com/iSpring/WebGlobe)、[itowns](https://github.com/iTowns/itowns)、[cesium](https://github.com/CesiumGS/cesium)。
-
-&emsp;打算~~抄袭~~参考的开源框架如下: [geo-three](https://github.com/tentone/geo-three)、[3DTilesRendererJS](https://github.com/NASA-AMMOS/3DTilesRendererJS)
+&emsp;~~抄袭~~参考和打算~~抄袭~~参考的的开源框架如下: [WebGlobe](https://github.com/iSpring/WebGlobe)、[itowns](https://github.com/iTowns/itowns)、[cesium](https://github.com/CesiumGS/cesium)、[geo-three](https://github.com/tentone/geo-three)、[3DTilesRendererJS](https://github.com/NASA-AMMOS/3DTilesRendererJS)
 
 &emsp;在重新开发的时候，计划上是分为四个步骤的: 
 
@@ -57,3 +55,8 @@
 4. 书写框架文档，包括使用代码的接口文档，相关案例，以及对代码内部信息，运行机制的说明文档。
 
 &emsp;虽然说按照计划就分为这么四步，但是由于之前的 gis 还是能够使用的，而且重新开发还是很花费时间的(主要是什么代码内部的信息都没有留下，内部的运行机制都不知道，基本是从零开始学起)，所以优先级不是很高。当时也说了，如果有别的项目的话，就优先完成别的项目。所以，到我离职前，勉勉强强完成了第一步吧，其中控制器和瓦片更新虽然能够运行，但还是存在一些问题，需要优化完善。有点小遗憾吧。
+
+&emsp;额外说一下，虽然说重新开发 gis 框架的时候，参考了不少其他的 gis 框架，但是很多我只是学习，从中找到我需要的部分，而且为了方便，只是看了最开始的几个版本(代码少，好学习)。类似 cesium 这样的知名框架，我并没有丰富的使用经验，也没有在实际的项目中进行使用，更谈不上掌握。
+
+
+
