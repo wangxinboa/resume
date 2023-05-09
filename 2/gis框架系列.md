@@ -40,7 +40,7 @@
 
 ## gis 框架
 
-&emsp;基于 three.js 实现的地理信息系统框架。之前的项目使用的都是小组内原本就有一个 gis 框架的，不过之前开发维护的人跑路了，然后小组内就没人懂了，之前的框架就只能用，不能改了(对于大厂的滤镜开始破碎)。然后我就和主管沟通了一下，重新开发了相关的框架。~~抄袭~~参考了小组内原本的 gis 框架，以及很多 github 上的开源框架，同时也学到了不少 gis 相关的知识，以及一些模型解析的规范等等。
+&emsp;基于 three.js 实现的地理信息系统框架。之前的项目使用的都是小组内原本就有一个 gis 框架的，不过之前开发维护的人跑路了，然后小组内就没人懂了，之前的框架就只能用，不能改了(对于大厂的滤镜开始破碎)。然后我就主动和我主管沟通了一下，重新开发了相关的框架。~~抄袭~~参考了小组内原本的 gis 框架，以及很多 github 上的开源框架，同时也学到了不少 gis 相关的知识，以及一些模型解析的规范等等。
 
 &emsp;~~抄袭~~参考和打算~~抄袭~~参考的的开源框架如下: [WebGlobe](https://github.com/iSpring/WebGlobe)、[itowns](https://github.com/iTowns/itowns)、[cesium](https://github.com/CesiumGS/cesium)、[geo-three](https://github.com/tentone/geo-three)、[3DTilesRendererJS](https://github.com/NASA-AMMOS/3DTilesRendererJS)
 
