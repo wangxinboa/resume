@@ -27,8 +27,3 @@
 4. [gis框架系列](https://github.com/officialBusiness/resume/blob/main/2/gis%E6%A1%86%E6%9E%B6%E7%B3%BB%E5%88%97.md)
 5. [人工智能标注](https://github.com/officialBusiness/resume/blob/main/2/%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%A0%87%E6%B3%A8.md)
 6. [城市大脑天擎平台](https://github.com/officialBusiness/resume/blob/main/2/%E5%9F%8E%E5%B8%82%E5%A4%A7%E8%84%91%E5%A4%A9%E6%93%8E%E5%B9%B3%E5%8F%B0.md)
-
-
-&emsp;除此之外，也有个人的学习和积累:
-
-1.
