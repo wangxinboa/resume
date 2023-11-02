@@ -43,7 +43,7 @@
 
 &emsp;按照时间顺序，主要做了以下事情:
 
-1. [推进超库项目的交付]()
-2. [模型拉取]()
-3. [三维模型展示业务, nova11模型展示]()
+1. [推进超库项目的交付](https://github.com/officialBusiness/resume/blob/main/3/%E6%8E%A8%E8%BF%9B%E8%B6%85%E5%BA%93%E9%A1%B9%E7%9B%AE%E7%9A%84%E4%BA%A4%E4%BB%98.md)
+2. [三维模型展示业务, nova11模型展示]()
+3. [模型拉取](https://github.com/officialBusiness/resume/blob/main/3/%E6%A8%A1%E5%9E%8B%E6%8B%89%E5%8F%96.md)
 4. [在线三维编辑器开发]()
