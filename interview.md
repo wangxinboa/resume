@@ -39,6 +39,16 @@
 	>* 标记清除; 引用计数
 	>* [1](https://segmentfault.com/a/1190000043893470)
 
+## css
+
+* [css 绘制三角形](https://blog.csdn.net/weixin_44015669/article/details/115663156):
+	>1. border 绘制三角形;
+	>2. linear-gradient 绘制三角形;
+	>3. conic-gradient 绘制三角形
+	>4. transform: rotate 配合 overflow: hidden 绘制三角形
+	>5. clip-path 绘制三角形
+	>6. Unicode 表示码绘制三角形;
+
 
 ## 浏览器
 
@@ -63,12 +73,5 @@
 
 ## less
 
-* less: 函数, 变量, 嵌套
-
-* [css 绘制三角形](https://blog.csdn.net/weixin_44015669/article/details/115663156):
-	>1. border 绘制三角形;
-	>2. linear-gradient 绘制三角形;
-	>3. conic-gradient 绘制三角形
-	>4. transform: rotate 配合 overflow: hidden 绘制三角形
-	>5. clip-path 绘制三角形
-	>6. Unicode 表示码绘制三角形;
+* less特性
+	>* [1](https://blog.csdn.net/chen__cheng/article/details/117066052)
