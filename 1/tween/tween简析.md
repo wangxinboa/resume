@@ -4,11 +4,11 @@
 
 ## tween动画的核心原理
 
-&emsp;先简单说一下tween动画的核心原理，本质上就是数据的操作。比如说，在 0s 到 1s 内，我想要一个高度为 0px 物体向下移动 100px，那么 0s 高度为 0px ，1s 高度为 -100px 。只是，如果只设置这两个时间的高度的话，那么 0s 到 0.99...s 的高度就一直会是 0px ，1s 突然变成 -100px ，会显得很突兀，那么就在 0s ～ 1s 之间不断插入对应的位置，即 ( 当前经过的时间 - 0 ) / 1s * -100px 。所以说，动画的本质依旧是离散的，只是每个数据之间的时间间隔在 requestAnimationFrame 函数下大约为 17ms （1s / 60） ，对人眼进行视觉欺骗认为是连贯的动画。
+&emsp;先简单说一下tween动画的核心原理，本质上就是数据的操作。比如说，在 0s 到 1s 内，我想要一个高度为 0px 物体向下移动 100px，那么 0s 高度为 0px ，1s 高度为 -100px 。只是，如果只设置这两个时间的高度的话，那么 0s 到 0.99...s 的高度就一直会是 0px ，1s 突然变成 -100px ，会显得很突兀，那么就在 0s ～ 1s 之间不断插入对应的位置，即 ( 当前经过的时间 - 0 ) / 1s * -100px 。所以说，动画的本质依旧是离散的，只是每个数据之间的时间间隔在 requestAnimationFrame 函数下大约为 17ms （1s / 60） ，让人眼视觉上认为是连贯的动画。
 
 ## 使用
 
-&emsp;[演示案例，直接在浏览器打开的html文件](https://officialbusiness.github.io/react_project/resume/tween/tween_demo.html)
+&emsp;[演示案例，直接在浏览器打开的html文件](https://WxbOfficial.github.io/react_project/resume/tween/tween_demo.html)
 
 &emsp;首先创建一个始终执行的动画函数，在其中调用函数TWEEN.update
 
@@ -59,13 +59,13 @@ function update() {
 
 &emsp;行数: 4-186
 
-&emsp;对象，表示动画运动的速度曲线，为[tween](https://github.com/officialBusiness/react_project/blob/main/resume/tween/tween%E7%AE%80%E6%9E%90.md#tween)服务，[相关链接](http://tweenjs.github.io/tween.js/examples/03_graphs.html)
+&emsp;对象，表示动画运动的速度曲线，为[tween](https://github.com/WxbOfficial/react_project/blob/main/resume/tween/tween%E7%AE%80%E6%9E%90.md#tween)服务，[相关链接](http://tweenjs.github.io/tween.js/examples/03_graphs.html)
 
 ### now,now$1
 
 &emsp;行数: 188-218
 
-&emsp;函数，表示获取当前时间的函数。一开始没有赋值，根据不同的环境赋值不同的函数，获取当前时间。为[tween](https://github.com/officialBusiness/react_project/blob/main/resume/tween/tween%E7%AE%80%E6%9E%90.md#tween)服务
+&emsp;函数，表示获取当前时间的函数。一开始没有赋值，根据不同的环境赋值不同的函数，获取当前时间。为[tween](https://github.com/WxbOfficial/react_project/blob/main/resume/tween/tween%E7%AE%80%E6%9E%90.md#tween)服务
 
 ### Group
 
@@ -183,7 +183,7 @@ Tween.prototype.yoyo = function (yoyo) {
 };
 ```
 
-* 方法easing: 传入[Easing](https://github.com/officialBusiness/react_project/blob/main/resume/tween/tween%E7%AE%80%E6%9E%90.md#easing)对象中的属性方法，表示动画的运动速度。比如，是一直匀速、先快后慢、先慢后快还是其他等（583行到586）
+* 方法easing: 传入[Easing](https://github.com/WxbOfficial/react_project/blob/main/resume/tween/tween%E7%AE%80%E6%9E%90.md#easing)对象中的属性方法，表示动画的运动速度。比如，是一直匀速、先快后慢、先慢后快还是其他等（583行到586）
 
 ```
 Tween.prototype.easing = function (easingFunction) {
@@ -251,7 +251,7 @@ Tween.prototype.start = function (time) {
 ```
 
 * this._isPlaying: 是否执行过start正在进行的动画，如果正在执行就不在执行了
-* 将tween存储到[group，一般默认是mainGroup](https://github.com/officialBusiness/react_project/blob/main/resume/tween/tween%E7%AE%80%E6%9E%90.md#group)中，遍历执行tween.update函数，执行对象的数值修改，进行动画
+* 将tween存储到[group，一般默认是mainGroup](https://github.com/WxbOfficial/react_project/blob/main/resume/tween/tween%E7%AE%80%E6%9E%90.md#group)中，遍历执行tween.update函数，执行对象的数值修改，进行动画
 * 标记动画已经开始
 * 一般执行start开始动画是不传入time时间的，是通过now$1()获取当前时间，标记动画开始的时间(一般之外的情况不影响动画的执行和对tween主干的理解，所以略过。~~我也没怎么去仔细研究~~)
 * 执行_setupProperties函数，主要是深拷贝作为动画操作的对象数据this._object，作为动画起点this._valuesStart保存起来
@@ -293,7 +293,7 @@ Tween.prototype.update = function (time) {
 
 * 如果没有传入时间time的话，获取当前时间
 * elapsed表示 从开始的时间点到目前的时间 占 从开始的时间点到终点的时间点 的比值，最小值为0，最大值为1
-* 根据不同运行方式，即[easing](https://github.com/officialBusiness/react_project/blob/main/resume/tween/tween%E7%AE%80%E6%9E%90.md#easing)，获得当前时间动画数据变化的比值
+* 根据不同运行方式，即[easing](https://github.com/WxbOfficial/react_project/blob/main/resume/tween/tween%E7%AE%80%E6%9E%90.md#easing)，获得当前时间动画数据变化的比值
 * 更新动画对象数据，如果elapsed系数为1，表示动画已经执行完毕
 * 方法_updateProperties: 简单的来说，就是更新作为动画操作的数据对象this._object，让数据是指定的时间点的数据。举个案例如下:
 
