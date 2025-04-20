@@ -46,7 +46,8 @@
 
 
 ## promise
-
+### 网上博客
+1. [30分钟，让你彻底明白Promise原理](https://segmentfault.com/a/1190000009478377)
 
 ## ansys 捕获异常
 
